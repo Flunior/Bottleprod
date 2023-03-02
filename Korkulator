@@ -1,0 +1,19 @@
+num1 = int(input('Введите первую цифру>'))
+num2 = int(input('Введите вторую цифру>'))
+print('''умножение *
+деление /
+сложение +
+вычитание -''')
+symbol=  input('Выберите операцию>') 
+ 
+if symbol==  '*':
+ print (f'вы выбрали знак умножения\n{num1}*{num2}={num1*num2}')
+elif symbol== '/':
+ if num2!=0:
+  print(f'вы выбрали знак деления\n{num1}/{num2}={num1/num2}')
+ else:
+  print("На 0 делить нельзя")
+elif symbol=='+':
+ print(f'вы выбрали знак сложения\n{num1}+{num2}={num1+num2}')
+elif symbol=='-':
+ print(f'вы выбрали знак минус\n{num1}-{num2}={num1-num2}')
